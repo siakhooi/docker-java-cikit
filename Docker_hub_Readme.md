@@ -4,6 +4,7 @@
 
 - migrated github repo
 - change version to `semver` format
+- rename `java-cikit` to `cikit`
 
 # tag `default-1.21`
 

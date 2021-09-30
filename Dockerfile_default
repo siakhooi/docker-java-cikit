@@ -2,7 +2,7 @@ FROM ubuntu:latest
 LABEL maintainer="siakhooi@gmail.com"
 LABEL name="java-cikit"
 LABEL objective="CI Kit for Java projects"
-LABEL version="1.21"
+LABEL version="1.2.2"
 LABEL description="CI Kit for java projects, using default: ubuntu,default-jdk,ant,maven,junit,junit4,init maven with `maven-archetype-quickstart`"
 
 COPY cikit /usr/bin
