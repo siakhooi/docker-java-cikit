@@ -1,13 +1,13 @@
 name: Push release to Docker Hub
 
 env:
-  DOCKERFILE1: Dockerfile
+  DOCKERFILE1: Dockerfile_default
   REGISTRY: registry.hub.docker.com
   REGISTRY_USER: siakhooi
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD_DOCKER_HUB }}
-  TAG1: siakhooi/template-docker:latest
-  TAG2: siakhooi/template-docker:${{ github.event.release.tag_name }}
-  FILE1: template-docker.tar.gz
+  TAG1: siakhooi/java-cikit:default
+  TAG2: siakhooi/java-cikit:default-${{ github.event.release.tag_name }}
+  FILE1: java-cikit.tar.gz
 
 on:
   release:

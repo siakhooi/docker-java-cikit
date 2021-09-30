@@ -1,12 +1,19 @@
-# Template for Docker project
+# docker-java-cikit
 
-## Changes on initialization
+- CI/CD image for java project
 
-- git
-  - update `.github/workflows/*.yml`
-    - `env`
-  - update `Dockerfile`
-  - update this `README.md`
-- github
-  - create Secret `REGISTRY_PASSWORD_GCR` - publish to Github Container Registry
-  - create Secret `REGISTRY_PASSWORD_DOCKER_HUB` - publish to Docker Hub
+  - OpenJDK - [https://jdk.java.net](https://jdk.java.net)
+    - JAVA_HOME = /usr/lib/jvm/default-java
+  - Apache ant - [https://ant.apache.org](https://ant.apache.org)
+    - ANT_HOME = /usr/share/ant
+  - Apache maven - [https://maven.apache.org](https://maven.apache.org)
+  - Junit - [https://junit.org](https://junit.org)
+    - /usr/share/java
+
+## History
+
+- `1.2.2` - 2021-Sep-30 - rename `java-cikit` to `cikit`, change version to `semver`
+- `1.21` - 2021-Jan-12 - add `junit4`
+- `1.2` - 2021-Jan-11 - add `junit`, `java-cikit`, - init maven with `maven-archetype-quickstart`
+- `1.1` - 2021-Jan-10 - add `maven`
+- `1.0` - 2021-Jan-09 - init `ubuntu:latest` with `default-jdk`,`ant`

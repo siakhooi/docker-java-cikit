@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo Java CI Kit version 1.2.2
+echo 
+echo "# uname -a"
+uname -a
+echo
+echo "# java -version"
+java -version
+echo
+echo "# javac -version"
+javac -version
+echo
+echo "# ant -version"
+ant -version
+echo
+echo "# mvn -version"
+mvn -version
+echo
+echo "# java -cp /usr/share/java/junit.jar junit.runner.Version"
+java -cp /usr/share/java/junit.jar junit.runner.Version
+echo
+echo "# java -cp /usr/share/java/junit4.jar junit.runner.Version"
+java -cp /usr/share/java/junit4.jar junit.runner.Version
