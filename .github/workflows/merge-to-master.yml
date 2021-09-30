@@ -1,9 +1,9 @@
 name: Test on Merge to master
 
 env:
-  DOCKERFILE1: Dockerfile
-  TAG1: tagname1:latest
-  FILE1: tagname1.tar.gz
+  DOCKERFILE1: Dockerfile_default
+  TAG1: java-cikit:default
+  FILE1: java-cikit.tar.gz
 
 on:
   push:
